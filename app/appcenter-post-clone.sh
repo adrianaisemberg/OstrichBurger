@@ -1,5 +1,6 @@
 #!/bin/bash
-if [[ -z "${badge_shape}" ]] then
+if [[ -z "${badge_shape}" ]]
+then
   echo not patching any icon this time
 else
   brew install mono-libgdiplus
