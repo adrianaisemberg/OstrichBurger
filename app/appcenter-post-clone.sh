@@ -6,6 +6,6 @@ else
   brew install mono-libgdiplus
   ANDROID_PROJECT_PATH=./
   echo patching icon with shape: $badge_shape, text: $badge_text, color: $badge_color
-  dotnet ./ext/PatchIcon.dll -projectPath=$ANDROID_PROJECT_PATH -shape=$badge_shape -text=$badge_text -colorHex=$badge_color -appIdSuffix=$app_id_suffix
+  dotnet ./ext/PatchIcon.dll android -projectPath=$ANDROID_PROJECT_PATH -shape=$badge_shape -text=$badge_text -colorHex=$badge_color -appIdSuffix=$app_id_suffix
 fi
 
